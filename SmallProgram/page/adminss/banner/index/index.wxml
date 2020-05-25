@@ -1,0 +1,18 @@
+<!--page/adminss/address/index/index.wxml-->
+<view class="holder" hidden='{{visual}}'>
+	<image src="/images/no_data.png" mode="widthFix"/>
+	<view>您还没有banner，可以点击底部按钮新增</view>
+</view>
+<!-- 地址列表 -->
+<view class="listview">
+	<view class="item" wx:for="{{addressList}}" wx:key="">
+		<image  src="{{item.image}}"/>
+		<image class="ft" src="/images/edit.png" bindtap="edit" data-index="{{index}}" data-id="{{item.objectId}}"/>
+	</view>
+</view>
+
+<!-- 添加按钮 -->
+<view class="add-address" bindtap="add">
+	<image src="/images/edit.png" class="icon" />
+	<view class="caption">新增banner</view>
+</view>

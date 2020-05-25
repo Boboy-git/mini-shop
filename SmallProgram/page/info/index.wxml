@@ -1,0 +1,36 @@
+<view class="container">
+    
+    <view class="address-container">
+        <view class="address">
+            <view class="title">{{articleInfo.name}}</view>
+            <view class='share_view'>
+                <button open-type="share">
+                    <image src='/images/share.png'></image>
+                </button>
+            </view>
+        </view>
+    </view>
+    <view class="address-container address-container2">
+        <view class="address">
+            <view class="title">价格:{{articleInfo.price}}</view>
+<!-- 			
+			<view class='share_view'>
+				<button bindtap='makeCol'>
+					<image src="/images/{{sc_status == 1 ? 'sc_ok' : 'sc'}}.png"></image>
+				</button>
+			</view> -->
+        </view>
+    </view>
+    <!-- 清单 -->
+    <text class='goods_detail'>商品简介：{{articleInfo.content}}</text>
+	<image src='{{articleInfo.image}}' mode='widthFix' class='image_view'></image>
+    <block wx:for='{{articleInfo.images_list}}' wx:key=''>
+        <image src='{{item}}' mode='widthFix' class='image_view2'></image>
+    </block>
+</view>
+<!-- <navigator url='../detail/index?objectId={{articleInfo.objectId}}'> -->
+<view class='goDetail' bindtap='tapAddCart' data-id='{{articleInfo.objectId}}'>加入购物车</view>
+<!-- </navigator> -->
+<view class="icon" bindtap='goCart'>
+	<image src="/images/cart.png"></image>
+</view>

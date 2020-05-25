@@ -1,0 +1,223 @@
+
+view{
+	font-size: 28rpx;
+}
+.section {
+	background: #fff;
+	border-bottom: 1rpx solid #dedede;
+	margin-bottom: 15rpx;
+	padding: 20rpx;
+}
+
+.ellipsis {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+/*特殊按钮*/
+button.yellow {
+	color: #fff;
+	background: #feb70f;
+}
+button.yellow:after {
+	border-color: rgba(255, 133, 111, 0.3);
+}
+button.yellow.hover {
+	background: #e4b203;
+}
+button.yellow.disabled {
+	background: #f4e283;
+}
+
+.sub_btn{
+	width: 90%;
+	margin: 5%;
+	background: #009B8D!important;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+}
+
+
+
+page {
+	/* background-color: #efefef; */
+}
+
+.section {
+	background: #fff;
+	border-bottom: 1rpx solid #dedede;
+	margin-bottom: 15rpx;
+	padding: 20rpx;
+}
+
+.ellipsis {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+/*特殊按钮*/
+button.yellow {
+	color: #fff;
+	background: #feb70f;
+}
+button.yellow:after {
+	border-color: rgba(255, 133, 111, 0.3);
+}
+button.yellow.hover {
+	background: #e4b203;
+}
+button.yellow.disabled {
+	background: #f4e283;
+}
+
+
+
+/*配送费*/
+.express-label {
+	/*width: 90%;*/
+	margin-left: 10px;
+	flex: 9;
+}
+
+.express-fee {
+	/*width: 10%;*/
+	margin-right: 5px;
+	flex: 1;
+}
+
+.express-fee:before {
+	content: "￥"
+}
+
+.item .amount {
+	width: 100%;
+	text-align: right;
+	padding-right: 10px;
+}
+
+/*待支付*/
+.item .amount:before {
+	content: "待支付 ￥";
+}
+
+/*初始隐藏*/
+.hidden {
+	display: none;
+}
+
+/*运行时显示*/
+.show {
+	display: block;
+}
+
+/*空白占位*/
+.holder {
+	margin-top: 40%;
+}
+
+.holder image {
+	margin: 20px auto;
+	width: 50px;
+	height: 50px;
+	display: block;
+}
+
+.holder view {
+	margin: 10px auto;
+	font-size: 16px;
+	color: #ccc;
+	text-align: center;
+}
+/*//无数据时提示 s*/
+.notdata_view{
+    width: 100%;
+    text-align: center;
+    margin-top: 300rpx;
+}
+.notdata_view image{
+    width: 20%;
+    margin-bottom: 20rpx;
+}
+
+
+
+.radio{
+	padding:0 20rpx;
+	
+}
+.info_veiw2{
+	display: inline-block;
+	padding: 0 20rpx;
+	line-height: 45rpx;
+}
+.menulist{
+    min-height: 120rpx;
+    line-height: 120rpx;
+}
+.menulist view{
+	float: left;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.menulist text{
+    margin-left: 5%;
+    display: block;
+    width: 25%;
+    float: left;
+    
+}
+.menulist .info_veiw{
+	width: 100%;
+}
+.menulist .info_veiw2{
+	width: 100%;
+}
+.menulist .picker{
+	width: 63%;
+}
+.menulist .input_view{
+	float: left;
+    width: 63%;
+    vertical-align:middle;
+    margin-top: 25rpx;
+	border: 1px solid #ebebeb;
+	padding: 0 10rpx;
+}
+.menulist input{
+    width: 100%;
+    height: 70rpx;
+}
+.menulist image{
+    width:2%;
+	vertical-align:middle;
+}
+.menu_item_img{
+	width: 10%!important;
+}
+.menu_item_img image{
+	width:50%;
+	margin:0 25%;
+}
+
+.help{
+	width: 100rpx;
+	height: 100rpx;
+	line-height: 100rpx;
+	text-align: center;
+	background: #009b8d;
+	color: #fff;
+	border-radius: 100rpx;
+	position: fixed;
+	bottom: 280rpx;
+	right: 50rpx;
+}
+.work_break{
+	word-break:keep-all;/* 不换行 */
+	white-space:nowrap;/* 不换行 */
+	overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+	text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}

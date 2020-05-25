@@ -1,0 +1,412 @@
+page {
+    background: #fff;
+}
+
+#myVideo {
+    width: 100%;
+	height: 350rpx;
+}
+
+.detailsConter {
+    padding: 28rpx 20rpx;
+}
+
+.titleDetails view{
+	height: 31rpx;
+	line-height: 31rpx;
+	margin-top: 24rpx;
+	padding-left: 18rpx;
+	border-left: 2px solid #FF373B;
+}
+.title {
+    font-size: 34rpx;
+	color: #333;
+    line-height: 56rpx;
+	font-weight:bold;
+}
+
+.num {
+    color: #999;
+    font-size: 24rpx;
+}
+
+.conter {
+    color: #949494;
+    font-size: 24rpx;
+    line-height: 37rpx;
+    margin-top: 42rpx;
+}
+
+.videcont {
+    border: 1px solid #eee;
+}
+
+.videtitle {
+    padding: 28rpx 20rpx;
+}
+
+.videtitle view {
+    font-size: 28rpx;
+    line-height: 42rpx;
+}
+
+.videtitle text {
+    font-size: 24rpx;
+    color: #999;
+}
+
+.videicon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30rpx 20rpx;
+}
+
+.videicon text {
+    color: #868686;
+    font-size: 26rpx;
+    margin-left: 10rpx;
+}
+
+.videicon view image {
+    width: 40rpx;
+    height: 40rpx;
+    vertical-align: middle;
+}
+
+.videicon view:nth-child(3) image {
+    margin-top: -2rpx !important;
+}
+
+.videde {
+    width: 100%;
+}
+
+.rowBack {
+    width: 100%;
+    height: 6rpx;
+    background: #ededed;
+}
+
+.playList {
+    width: 249rpx;
+    height: 180rpx;
+    position: relative;
+    display: inline-block;
+}
+
+.playList .banner {
+    width: 100%;
+    height: 100%;
+}
+
+.playIcon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -42rpx;
+    width: 85rpx;
+    height: 85rpx;
+    margin-left: -42rpx;
+}
+
+.playList {
+    margin: 0 20rpx;
+}
+
+.backe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.plsyText {
+    width: 229rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    position: absolute;
+    bottom: 15rpx;
+    font-size: 26rpx;
+    color: #fff;
+    left: 16rpx;
+}
+
+.titleDetails {
+    height: 64rpx;
+    line-height:64rpx;
+    padding: 0 20rpx;
+    border-bottom: 1px solid #eee;
+    font-size: 30rpx;
+}
+
+.scrollview {
+    width: 730rpx;
+    white-space: nowrap;
+    padding: 30rpx 0 0;
+}
+
+.linkBaner {
+    width: 710rpx;
+    height: 320rpx;
+    margin: 0 auto;
+}
+
+.linkBaner image {
+    width: 100%;
+    height: 100%;
+}
+
+.none {
+    border: none !important;
+}
+
+.fabiao {
+    /* width: 100%; */
+    padding: 20rpx;
+    background: #fff;
+    border-top: 1px solid #ededed;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fabiao input {
+    width: 670rpx;
+    height: 58rpx;
+    line-height: 58rpx;
+    background: #EEEEEE;
+    font-size: 24rpx;
+    padding: 0 20rpx;
+	border-radius: 7rpx;
+}
+
+.pingjia {
+    margin-bottom: 100rpx;
+}
+
+.pingjialist {
+    padding: 30rpx 20rpx;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+.pingjialist .pingjiacen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lll image {
+    width: 68rpx;
+    height: 68rpx;
+    border-radius: 100%;
+	float: left;
+}
+
+.lll view {
+    font-size: 28rpx;
+    line-height: 34rpx;
+    height: 34rpx;
+    margin-left: 20rpx;
+	float: left;
+	width: 75%;
+}
+.lll view:nth-child(3) {
+    font-size: 22rpx;
+	color: #AFB1AF;
+}
+
+.lll {
+    width: 391rpx;
+}
+
+.lllView {
+    color: #666;
+    font-size: 24rpx;
+    line-height: 81rpx;
+    height: 81rpx;
+}
+.lllView image {
+    color: #666;
+    font-size: 24rpx;
+	width: 31rpx;
+	vertical-align: middle;
+    line-height: 31rpx;
+    height: 31rpx;
+	margin-bottom: 10rpx;
+}
+
+.pingjiatext {
+    font-size: 24rpx;
+    color: #666;
+    line-height: 46rpx;
+    margin-top: 24rpx;
+}
+
+.pingjiaMenu>view:last-child {
+    border: 0 !important;
+}
+
+.nono {
+    display: flex;
+    flex-direction: column;
+    margin: 77rpx 0 55rpx;
+}
+
+.nono image {
+    width: 150rpx;
+    height: 100rpx;
+    margin: 0 auto;
+}
+
+.nono text {
+    font-size: 26rpx;
+    text-align: center;
+    height: 108rpx;
+    line-height: 108rpx;
+}
+
+.share_view{
+  width: 40rpx;
+	height: 40rpx;
+
+}
+.share_view image{
+	width: 40px;
+	height: 40px;
+    position: absolute;
+    left: 0;
+    top:0rpx;
+        margin-top:5rpx; 
+    
+}
+button:after {
+  border: none!important;
+}
+button {
+  background-color: #fff;
+  margin: 0!important;
+  padding: 0!important;
+  	width:100%;
+	height:100%;
+    overflow:inherit!important;
+}
+.author_view{
+	padding: 10rpx 20rpx;
+	height: 75rpx;
+	line-height: 75rpx;
+}
+.avatar_view{
+	width: 68rpx;
+	height: 68rpx;
+	border-radius: 100%;
+	float: left;
+}
+.avatar_view image{
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+}
+.info_view{
+	float: left;
+	width: 392rpx;
+	margin-left: 18rpx;
+}
+.info_view view{
+	width: 100%;
+	height: 37rpx;
+	line-height: 34rpx;
+	font-size: 28rpx;
+	color: #333333;
+}
+.info_view view:nth-child(2){
+	width: 100%;
+	height: 34rpx;
+	line-height: 34rpx;
+	font-size: 22rpx;
+	color: #AFB1AF;
+}
+.atten_view{
+	width: 123rpx;
+	height: 50rpx;
+	margin-top: 8rpx;
+	border: 2rpx solid #FF373B;
+	line-height: 50rpx;
+	text-align: center;
+	float: right;
+	font-size: 26rpx;
+	color: #FF373B;
+	border-radius:4rpx;
+}
+.atten_ok{
+	border: 2rpx solid #999;
+	color: #999;
+}
+.feedback_view{
+	height: 35rpx;
+	line-height: 35rpx;
+	padding: 20rpx 20rpx;
+	color: #999999;
+	text-align: right;
+	font-size: 24rpx;
+  border-bottom: 10rpx solid #eee;
+}
+.feedback_view image{
+	width: 24rpx;
+	vertical-align: middle;
+	height: 24rpx;
+	line-height: 24rpx;
+	color: #999999;
+	margin-bottom: 6rpx;
+}
+.smallArticleView{
+	padding: 18rpx 20rpx;
+
+}
+.smallArticleView .article_item{
+	font-size: 32rpx;
+	color: #333;
+	line-height: 50rpx;
+	letter-spacing:2rpx;
+}
+.smallImageView{
+	padding: 13rpx 20rpx;
+}
+.smallImageView image{
+	width: 232rpx;
+	height: 194rpx;
+}
+.smallImageView image:nth-child(3n-2){
+	margin-right: 7rpx;
+}
+.smallImageView image:nth-child(3n-1){
+	margin-right: 7rpx;
+}
+.col_view{
+	width: 120rpx;
+	color: #999999;
+	text-align: center;
+	font-size: 24rpx;
+	float: left;
+	height: 58rpx;
+	line-height: 58rpx;
+}
+.col_view image{
+	width: 36rpx;
+	height: 36rpx;
+	vertical-align: middle;
+	margin-bottom: 10rpx;
+}
+
+.del_comments{
+	color: #FF373B;
+}

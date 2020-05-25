@@ -1,0 +1,275 @@
+/* page/cart/cart.wxss */
+
+.container {
+	margin-bottom: 120rpx;
+}
+
+/*地址容器*/
+.address-container {
+	margin-bottom: -10px;
+}
+
+/*收货地址*/
+.address {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background: white;
+	position: relative;
+}
+
+.address .title {
+	font-size: 14px;
+}
+
+/*地理定位图标*/
+.location {
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
+}
+
+/*航邮花边*/
+.mail {
+	width: 100%;
+	margin-bottom: 32rpx;
+}
+
+/*.商品清单信息*/
+
+/*备注信息*/
+.remark {
+	background: white;
+	margin-top: 10px;
+
+}
+
+.title-label {
+	flex: 1;
+}
+
+.arrow {
+	flex: 1;
+}
+
+.subtitle-label {
+	text-align: right;
+	margin-right: 30px;
+	flex: 4;
+}
+
+/*备注文字截取*/
+.remark-title {
+	overflow: hidden; 
+	text-overflow: ellipsis; 
+	white-space: nowrap;
+}
+
+/*picker选择器*/
+picker {
+	flex: 4;
+}
+
+.disperse {
+	justify-content: space-between;
+}
+/*.备注信息*/
+
+
+/*底部操作区域*/
+.footer {
+	display: flex;
+	flex-direction: row;
+	height: 100rpx;
+	line-height: 100rpx;
+	color: white;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	font-size: 16px;
+}
+
+.footer .payment {
+	width: 70%;
+	background: #fff;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 32rpx;
+	color: #363636;
+}
+
+
+.footer .checkout {
+	width: 30%;
+	background: #33C92C;
+	text-align: center;
+	font-size: 32rpx;
+}
+
+/*.底部操作区域*/
+
+/*用户地址项*/
+
+/*每一项*/
+.address-container .item {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 0;
+	border-bottom: 1px solid #ddd;
+	background: white;
+	margin-left: 0;
+	line-height: initial;
+}
+
+/*主体内容*/
+.address-container .item .bd {
+	/* flex: 1; */
+	display: flex;
+	flex-direction: column;
+}
+
+/*收件人信息*/
+.address-container .item .bd .receiver {
+	color: black;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	margin: 10px 0;
+	margin-left: 10px;
+}
+
+/*姓氏*/
+.address-container .item .bd .receiver .firstname {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/*性别*/
+.address-container .item .bd .receiver .gender {
+	font-size: 12px;
+	margin: 0 10px;
+}
+
+/*手机号码*/
+.address-container .item .bd .receiver .mobile {
+	font-size: 12px;
+}
+
+/*收件地址*/
+.address-container .item .bd .detail {
+	color: #999;
+	font-size: 14px;
+	margin: 5px 0;
+	margin-left: 10px;
+}
+.goods_item{
+	float: left;
+	width: 23%;
+	height: 90px;
+	margin: 1%;
+}
+.payment span{
+	color: red;
+}
+.payment text{
+	text-align: right;
+	float:right;
+}
+.goods_title{
+	font-size: 30rpx;
+	padding-left: 15rpx;
+	height: 30px;
+	line-height: 30px;
+	color: #363636;
+	background:#fff!important;
+}
+
+.menulist{
+    height: 100rpx;
+    line-height: 100rpx;
+    border-top: 1px solid #f3f3f3;
+	background-color: #fff;
+	font-size: 28rpx;
+}
+.list{
+	overflow: hidden;
+}
+.menulist text{
+    margin-left: 5%;
+    display: block;
+    width: 25%;
+    float: left;
+    
+}
+.menulist input{
+    float: left;
+    width: 68%;
+    vertical-align:middle;
+    height: 70rpx;
+    margin-top: 15rpx;
+}
+
+.goods_list{
+	width: 100%;
+	padding: 0 2%;
+	height: 200rpx;
+	line-height: 200rpx;
+	float:left;
+	border-top: 1px solid #E4E4E5;
+	background-color: #F7F7F8;
+}
+.goods_list image{
+	width: 22%;
+	height: 170rpx!important;
+	line-height: 170rpx!important;
+	margin-top: 15rpx;
+	float: left;
+}
+.order_goods_view{
+	width: 73%;
+	float: left;
+	margin-left: 2%;
+}
+.order_goods_view view{
+	height: 65rpx;
+	line-height: 65rpx;
+	font-size: 36rpx;
+	color:#000;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+	width: 100%;
+}
+.goods_num{
+	text-align: right;
+	padding-right: 5%;
+	color: #A3A3A4!important;
+	font-size: 28rpx!important;
+}
+.amount_view{
+	width: 92%;
+	margin: 0 4%;
+	height: 80rpx;
+	line-height: 80rpx;
+	float: left;
+	margin-bottom: 5%;
+}
+.amount_view view{
+	width: 30%;
+	float: left;
+	text-align: right;
+	font-size: 24rpx;
+}
+.order_state{
+	width: 40%!important;
+	text-align: left!important;
+}
+.amount_item{
+	color: #000;
+}

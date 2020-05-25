@@ -1,0 +1,22 @@
+<!--page/adminss/member/index.wxml-->
+
+<!-- 地址列表 -->
+<block wx:if="{{member_list}}">
+	<view class="listview">
+		<view class="item" wx:for="{{member_list}}" wx:key="" data-id='{{item.objectId}}'  bindtap='open_menu_cancel'  data-member_name='{{item.nickName}}' >
+			<image  src="{{item.userPic}}"/>
+			<view class="bd">
+				{{item.nickName}}
+			</view>
+			<view style='margin-right:20rpx;'>
+				{{item.createdAt}}
+			</view>
+		</view>
+	</view>
+</block>
+<block wx:else>
+<view class="holder">
+	<image src="/images/no_data.png" mode="widthFix"/>
+	<view>暂无符合条件的数据</view>
+</view>
+</block>

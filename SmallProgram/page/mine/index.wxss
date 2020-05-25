@@ -1,0 +1,105 @@
+page{
+	background-color: #fff;
+}
+view{
+    color: #363636;
+    font-size: 28rpx;
+}
+.menulist{
+    height: 120rpx;
+    line-height: 120rpx;
+    border-bottom: 1px solid #f3f3f3;
+}
+.menulist view{
+	width: 42%;
+	float: left;
+}
+.menulist text{
+    margin-left: 5%;
+    display: block;
+    width: 25%;
+    float: left;
+    
+}
+.menulist input{
+    float: left;
+    width: 68%;
+    vertical-align:middle;
+    height: 70rpx;
+    margin-top: 15rpx;
+}
+.menulist image{
+    width:2%;
+	vertical-align:middle;
+}
+.menu_item_img{
+	width: 10%!important;
+}
+.menu_item_img image{
+	width:50%;
+	margin:0 25%;
+}
+.right_view{
+	width: 37%!important;
+	text-align: right;
+	padding-right: 5%;
+}
+.right_view image{
+	width: 1px;
+	height: 1px;
+}
+.right_view span{
+	color: #ffbc00;
+}
+.user_view{
+	height: 220rpx;
+	width: 92%;
+	margin: 0 4%;
+	border-bottom: 1px solid #ebebeb;
+}
+.avatar_img{
+	width: 150rpx;
+	height: 150rpx;
+	float: left;
+	border-radius: 100px;
+}
+.user_info{
+	margin-top: 60rpx;
+}
+.user_info view{
+	width: 70%;
+	float: left;
+	height:130rpx;
+	line-height: 130rpx;
+	margin-left: 5%;
+}
+.userbg{
+	width:300rpx;
+	height:270rpx;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.sc{
+  background: #fff;
+  width: 100%;
+  font-size: 12px;
+  line-height: 16px;
+  color: #666;
+  padding: 4% 0;
+  display: inline-block;
+}
+.sc image{
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+.bte{
+  border-bottom: 1px solid #eee;
+}
+.sc navigator{
+	display:inline-block;
+	width: 33.33%;
+	text-align: center;
+	float:left;
+}

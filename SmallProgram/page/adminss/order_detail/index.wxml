@@ -1,0 +1,26 @@
+<view class='list_view'>
+	<view class='menulist'>
+		<view class='menu_item_img'>
+			<image src="/images/usercenter/diandan.png" mode="widthFix"></image>
+		</view>
+		<view class='order_info_view'>
+			<view class='time'>{{order_info.createdAt}}</view>
+			<view class='area'>{{order_info.contact_name}} {{order_info.contact_address}}</view>
+		</view>
+		<block  wx:for="{{goods_list}}"  wx:for-item="itemName" wx:for-index="itemIndex" wx:key='igt'>
+			<view class='goods_list' data-id="{{itemName.goods_id}}" bindtap='goDetail'>
+				<image src="{{itemName['goods_image']}}" mode="aspectFill"></image>
+				<view class='order_goods_view'>
+					<view class='goods_name'>{{itemName.goods_name}}</view>
+					<view class='goods_num'>商品价格:{{itemName.goods_price}}</view>
+					<view class='goods_num'>商品数量:{{itemName.num}}</view>
+				</view>
+			</view>
+		</block>
+		<view class='amount_view'>
+			<view class='order_state'>{{order_info.state_name}}</view>
+			<view>共{{order_info.goods_num}}件商品</view>
+			<view class='amount_item'>合计:￥{{order_info.order_amount}}</view>
+		</view>
+	</view>
+</view>

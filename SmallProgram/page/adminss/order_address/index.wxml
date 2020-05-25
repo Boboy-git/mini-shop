@@ -1,0 +1,57 @@
+<view class='type_list'>
+	<view bindtap='getOrderList' data-type='1'><text class="{{order_state == 1 ? 'active' : ''}}">全部</text></view>
+	<view bindtap='getOrderList' data-type='2'><text class="{{order_state == 2 ? 'active' : ''}}">待发货</text></view>
+	<view bindtap='getOrderList' data-type='3'><text class="{{order_state == 3 ? 'active' : ''}}">待收货</text></view>
+	<view bindtap='getOrderList' data-type='4'><text class="{{order_state == 4 ? 'active' : ''}}">已完成</text></view>
+</view>
+<view class='list_view'>
+	<block wx:if="{{order_list.length>0}}">
+	<view class='menulist' wx:for="{{order_list}}" wx:key='id' bindtap="GoDetail" data-id='{{item.objectId}}'>
+		<view class='menu_item_img'>
+			<image src="/images/usercenter/diandan.png" mode="widthFix"></image>
+		</view>
+		<view class='order_info_view'>
+			<view class='time'>{{item.createdAt}}({{item.userAttr.nickName}})</view>
+			<view class='area'>{{item.contact_name}} {{item.contact_address}}</view>
+		</view>
+		<view class='all_goods'>
+
+			<view class='goods_list' wx:for='{{item.goods_images_arr}}' wx:for-item="itemName" wx:key="i">
+				<image src="{{itemName}}" mode="aspectFill"></image>
+			</view>
+		</view>
+		<block  wx:for="{{item.goods_list}}"  wx:for-item="itemName" wx:for-index="itemIndex" wx:key='igt'>
+			<view class='goods_list'>
+				<image src="/images/usercenter/diandan.png" mode="aspectFill"></image>
+			</view>
+		</block>
+		<view class='amount_view amount_view2'>
+			<view class='order_state'>{{item.state_name}}</view>
+			<view>共{{item.goods_num}}件商品</view>
+			<view class='amount_item'>合计:￥{{item.order_amount}}</view>
+		</view>
+		<block wx:if='{{item.order_state == 2}}'>
+		<view class='amount_view'>
+			<view class='amount_item amount_btn' catchtap='changeOrderState' data-id='{{item.objectId}}' data-cgst='3'>发货</view>
+			<view class='amount_item amount_btn2' catchtap='delOrderState' data-type='2' data-id='{{item.objectId}}'>取消订单</view>
+		</view>
+		</block>
+		<block wx:if='{{item.order_state == 3}}'>
+		<view class='amount_view'>
+			<view class='amount_item amount_btn' catchtap='changeOrderState' data-id='{{item.objectId}}' data-cgst='4'>送达</view>
+		</view>
+		</block>
+		<block wx:if='{{item.order_state == 4}}'>
+		<view class='amount_view'>
+			<view class='amount_item amount_btn2' catchtap='delOrderState' data-type='1' data-id='{{item.objectId}}'>删除</view>
+		</view>
+		</block>
+	</view>
+	</block>
+	<block wx:else>
+		<view class='notdata_view'>
+			<image src="/images/notdata.png" mode="widthFix"></image>
+			<view>暂无符合条件的数据</view>
+		</view>
+	</block>
+</view>

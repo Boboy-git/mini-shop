@@ -1,0 +1,28 @@
+<view class='menulist'wx:for="{{order_list}}" wx:key='' bindtap='showMenu' data-id="{{item.objectId}}">
+	<view class='menu_item_img'>
+		<image src="/images/usercenter/diandan.png" mode="widthFix"></image>
+	</view>
+    <view>取餐码：{{item.objectId}}</view>
+	<view class='right_view'>
+		总价：{{item.order_amount}}
+	</view>
+	<image src="/images/more.png" mode="widthFix"></image>
+</view>
+<view class='GoodsView' hidden='{{hiddenGoods}}'>
+<view class='hiddenClass' bindtap='SHGoods'></view>
+	<view class='goodsList'>
+		<view class="middle" style="font-size:12px;">
+			<text class="title">名称</text>
+			<text class="title">数量</text>
+			<text class="title">价格</text>
+		</view>
+		<scroll-view scroll-y="true" style="height:{{scroll_height}}px">
+			<view class="list_detail" wx:for="{{GoodsList}}" wx:key=''>
+				<text class="title">{{item.goods_name}}</text>
+				<text class="title">{{item.num}}</text>
+				<text class="title">￥{{item.goods_price}}</text>
+			</view>
+		</scroll-view>
+	</view>
+
+</view>

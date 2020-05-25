@@ -1,0 +1,14 @@
+/* pages/mine/login/index.wxss */
+view{
+	font-size: 34rpx;
+	color: #7d7d7d;
+	text-indent: 2em;
+	margin: 251rpx 10rpx;
+	line-height: 54rpx;
+}
+button{
+	width: 80%;
+	margin-left: 10%;
+	position: fixed;
+	bottom: 30rpx;
+}

@@ -1,0 +1,50 @@
+<!--page/adminss/address/index/index.wxml-->
+<view class="holder" hidden='{{visual}}'>
+	<image src="/images/no_data.png" mode="widthFix"/>
+	<view>您还没有分类，可以点击底部按钮新增</view>
+</view>
+<!-- 地址列表 -->
+<view class="listview">
+	<view class="item" wx:for="{{classifyList}}" wx:key="">
+		<view class="bd">
+			<view class="receiver">
+				<view class="firstname">分类名称：{{item.name}}</view>
+			</view>
+		</view>
+		<image class="ft" src="/images/edit.png" bindtap="edit" data-index="{{index}}" data-id="{{item.objectId}}" data-classify_name="{{item.name}}"/>
+	</view>
+</view>
+
+<!-- 添加按钮 -->
+<view class="add-address" bindtap="add">
+	<image src="/images/edit.png" class="icon" />
+	<view class="caption">新增分类</view>
+</view>
+
+
+<view class='upd_add_view' hidden='{{upd_add_hidden}}'>
+	<view class='upd_add_item'>
+		<view class='item_title'>{{upd_add_title}}</view>
+		<view class='menulist'>
+			<text>名称</text>
+			<input placeholder="请输入名称"  bindinput='ChangeClassifyName' value='{{classify_name}}'/>
+		</view>
+		<!-- <view class='menulist'>
+			<text>排序</text>
+			<input placeholder="请输入数字（1-255）" type='number' bindinput='ChangeClassifySort' value='{{sort}}' maxlength='3'/>
+		</view> -->
+		<block wx:if='{{upd_object_id}}'>
+		<view class="btn_del_view">
+			<view class="hideDiaLog" bindtap="hideDiaLog">取消</view>
+			<view class="btn_del_primary" bindtap="del_do" data-id="{{upd_object_id}}">删除</view>
+			<view class="btn_primary" bindtap="upd_add_do" data-id="{{upd_object_id}}">提交</view>
+		</view>
+		</block>
+		<block wx:else>
+			<view class="btn_view">
+				<view class="hideDiaLog" bindtap="hideDiaLog">取消</view>
+				<view class="btn_primary" bindtap="upd_add_do" data-id="{{upd_object_id}}">提交</view>
+			</view>
+		</block>
+	</view>
+</view>

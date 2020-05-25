@@ -1,0 +1,36 @@
+<!--page/cart/index.wxml-->
+<block wx:if="{{showCartList}}">
+    <view class="goods-container" scroll-y="true" scroll-into-view="{{classifyViewed}}">
+        <view class="goods" wx:for="{{showCartList}}" wx:key="" bindtap='goInfo' data-id="{{item.goods_id}}">
+            <image class="pic" src="{{item.goods_image}}"></image>
+            <view class="name ellipsis">{{item.goods_name}}</view>
+            <!-- <view class="sold">销量:{{item.sale_num}}</view> -->
+            <view class="price">￥{{item.goods_price}}</view>
+            <block wx:if="{{item.num}}">
+                <view class="delCart" catchtap='tapReduceCart' data-id="{{item.goods_id}}" data-key='{{index}}'>
+                    <image src="/images/cart_min_plus.png"></image>
+                </view>
+                <input type='text' disabled='true' value='{{item.num}}' />
+            </block>
+            <view class="addCart" catchtap="tapAdduceCart" data-key='{{index}}' data-id="{{item.goods_id}}">
+                <image src="/images/plus.png"></image>
+            </view>
+        </view>
+        <view class="cart">
+            <view class="data">
+                <view class="icon">
+                    <image src="/images/cart.png"></image>
+                    <view class="count">{{cart.count}}</view>
+                </view>
+                <view class="total">￥{{cart.total}}</view>
+            </view>
+            <view class="pay" bindtap="pay_now">下单</view>
+        </view>
+    </view>
+</block>
+<block ex:else>
+<view class='nono'>
+			<image src='/images/nono.png'></image>
+			<text>快去挑选心仪的商品吧</text>
+		</view>
+</block>

@@ -1,0 +1,48 @@
+<!--page/adminss/address/add/index.wxml-->
+<view class='menulist'>
+    <text>商品图片</text>
+</view>
+<view class='live_photo'>
+	<image src="{{images_url}}" bindtap='addPhoto'></image>
+</view>
+<view class='menulist'>
+    <text>详情图片</text>
+</view>
+<view class='live_photo'>
+	<image wx:for='{{images_list}}' src="{{item}}" wx:key=''  class='shuliangimg'>
+		<text class='shuliang' bindtap='delImg' data-index='{{index}}'>X</text>
+	</image>
+	<image src="/images/addlivephoto.png" bindtap='addPhotoList'></image>
+</view>
+<view class='menulist'>
+    <text>类别</text>
+    <picker bindchange="ChangeClassify" value="{{conIndex}}" range="{{classifyArray}}">
+        <view class="picker">
+            {{classifyArray[conIndex]}}
+        </view>
+    </picker>
+</view>
+<view class='menulist'>
+    <text>名称</text>
+    <input placeholder="请输入名称"  bindinput='ChangeName' maxlength="20" value='{{name}}'/>
+</view>
+<view class='menulist'>
+    <text>价格</text>
+    <input type='digit' placeholder="请输入价格" bindinput='ChangePrice' style='width:{{inputWidth}}px' value='{{price}}' />
+</view>
+<view class='menulist'>
+    <text>简介</text>
+	
+</view><textarea class='textarea_view' placeholder="请输入简介" maxlength='-1' value="{{content}}" auto-height='false' bindinput='ChangeContent'></textarea>
+<view class='menulist'>
+    <text>热销</text>
+	<switch checked="{{hot == 1 ? true : false}}" bindchange="hotChange" />
+</view>
+<view class='menulist'>
+    <text>推荐到首页</text>
+    <switch checked="{{rec == 1 ? true : false}}" bindchange="tuijianChange" />
+</view>
+<view class="buttons">
+	<button wx:if="{{isEdit}}" class="delete" bindtap="delete">删除</button>
+	<button form-type="submit" type='primary' class="confirm"  bindtap='add'>{{isEdit ? '修改' : '添加'}}</button>
+</view>

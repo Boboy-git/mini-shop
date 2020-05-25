@@ -1,0 +1,18 @@
+
+<view class='user_view'>
+    <view class='user_info'>
+        <image src="{{userPic}}" mode="aspectFill" class='avatar_img' bindtap='addPhoto'></image>
+    </view>
+</view>
+<form bindsubmit="submit" report-submit="true">
+<view class='menulist'>
+	<view class='menu_item_img'>
+		<image src="/images/list.png" mode="widthFix"></image>
+	</view>
+    <view>昵称</view>
+	<view class='input_view'>
+		<input placeholder="请输入昵称" name='nickName' value='{{userInfo.nickName}}'/>
+	</view>
+</view>
+<button formType="submit" type='primary' class='sub_btn'>保存</button>
+</form>

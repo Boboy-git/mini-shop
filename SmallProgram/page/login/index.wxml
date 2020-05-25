@@ -1,0 +1,4 @@
+<!--pages/mine/login/index.wxml-->
+<view hidden='{{login_hidden}}'>小程序同步您的头像和昵称等系列数据。请点击下方按钮授权。</view>
+
+<button type='primary' open-type="getUserInfo" bindgetuserinfo='getUserInfo' hidden='{{login_hidden}}'>微信授权</button>

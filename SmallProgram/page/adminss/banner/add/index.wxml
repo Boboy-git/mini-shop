@@ -1,0 +1,11 @@
+<!--page/adminss/address/add/index.wxml-->
+<view class='menulist'>
+    <text>图片</text>
+</view>
+<view class='live_photo'>
+	<image src="{{images_url}}" bindtap='addPhoto'></image>
+</view>
+<view class="buttons">
+	<button wx:if="{{isEdit}}" class="delete" bindtap="delete">删除</button>
+	<button form-type="submit" type='primary' class="confirm"  bindtap='add'>{{isEdit ? '修改' : '添加'}}</button>
+</view>

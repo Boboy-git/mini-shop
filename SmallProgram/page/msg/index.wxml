@@ -1,0 +1,31 @@
+<!--page/msg/index.wxml-->
+<!--start 评价 -->
+<view class='pingjia'>
+    <view class='titleDetails'>
+        <view>最新话题</view>
+    </view>
+    <view class='pingjiaMenu' wx:if="{{datacomments.length>0}}">
+        <block wx:for="{{datacomments}}" wx:key="{{index}}">
+            <view class='pingjialist'>
+                <view class='pingjiacen'>
+                    <view class='lll'>
+                        <image src='{{item.userAttr.userPic}}' mode='aspectFill'></image>
+                        <view>{{item.userAttr.nickName}}</view>
+                        <view>{{item.createdAt}} <block wx:if="{{item.userAttr.objectId == userInfo.objectId}}"><span class='del_comments' catchtap='del_comments_btn' data-id="{{item.objectId}}"  data-index="{{index}}">删除</span></block><block wx:elif="{{userInfo.is_admin == 1}}"><span class='del_comments' catchtap='del_comments_btn' data-id="{{item.objectId}}"  data-index="{{index}}">删除</span></block></view>
+                    </view>
+                </view>
+                <view class='pingjiatext'>{{item.content}}</view>
+            </view>
+        </block>
+    </view>
+    <view class='nono' wx:else>
+        <image src='/images/nono.png'></image>
+        <text>快来抢第一条沙发吧~</text>
+    </view>
+</view>
+<!--end 评价 -->
+<!-- start 发表评论 -->
+<view class='fabiao'>
+    <input type='text' confirm-type="send" focus="{{isfocus}}" name="content" value="{{content}}" placeholder="请写下你想说的，回车键发送哦" bindconfirm="makecommentsTap"></input>
+</view>
+<!-- end 发表评论 -->

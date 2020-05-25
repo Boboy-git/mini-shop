@@ -1,0 +1,71 @@
+/* page/adminss/setting/index.wxss */
+
+.user_view{
+	height: 300rpx;
+	width: 100%;
+	text-align:center;
+	color: #fff;
+}
+.avatar_img{
+	width: 150rpx;
+	height: 150rpx;
+	margin: 8%  30% 10rpx 30%;
+	border-radius: 100px;
+}
+.user_info view{
+	width: 100%;
+	float: left;
+	height:130rpx;
+	line-height: 130rpx;
+	font-size: 34rpx;
+}
+
+.menulist{
+    height: 120rpx;
+    line-height: 120rpx;
+    border-bottom: 1px solid #f3f3f3;
+}
+.menulist view{
+	width: 20%;
+	float: left;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.menulist text{
+    margin-left: 5%;
+    display: block;
+    width: 25%;
+    float: left;
+    
+}
+.menulist .picker{
+	width: 63%;
+}
+.menulist .input_view{
+	float: left;
+    width: 63%;
+    vertical-align:middle;
+    margin-top: 25rpx;
+	border: 1px solid #ebebeb;
+	padding: 0 10rpx;
+}
+.menulist input{
+    width: 100%;
+    height: 70rpx;
+}
+.menulist image{
+    width:2%;
+	vertical-align:middle;
+}
+.menu_item_img{
+	width: 10%!important;
+}
+.menu_item_img image{
+	width:50%;
+	margin:0 25%;
+}
+.sub_btn{
+	position: fixed;
+	bottom: 10rpx;
+}

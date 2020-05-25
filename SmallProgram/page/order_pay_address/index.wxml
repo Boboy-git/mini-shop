@@ -1,0 +1,53 @@
+<!--page/cart/cart.wxml-->
+<!-- 地址选择 -->
+<view class="container">
+	<view class="address-container">
+		<!-- 用户尚未添加地址时 -->
+		<view class="address" bindtap="selectAddress" wx:if="{{!address}}">
+			<image src="/images/location.png" class="location" />
+			<view class="title">请选择一个收货地址</view>
+			<view class="arrow"></view>
+		</view>
+		<!-- 用户已添加过地址 -->
+		<view class="item" wx:else>
+			<image src="/images/location.png" class="location" />
+			<view class="bd" bindtap="selectAddress">
+				<view class="receiver">
+					<view class="firstname">{{address.realname}}</view>
+					<view class="gender">{{address.gender == 1 ? '先生' : '女士'}}</view>
+					<view class="mobile">{{address.mobile}}</view>
+				</view>
+				<view class="detail">{{address.area}}{{address.detail}}</view>
+			</view>
+			<view class="arrow"></view>
+		</view>
+		<image src="/images/mail.png" class="mail" mode="widthFix" />
+	</view>
+	<!-- 商品清单 -->
+	<view class='goods_title'>商品列表</view>
+	<!-- 清单 -->
+	<view class="list">
+		<block wx:for="{{showCartList}}" wx:key="">
+			<view class='goods_list'>
+				<image src="{{item['goods_image']}}" mode="aspectFill"></image>
+				<view class='order_goods_view'>
+					<view class='goods_name'>{{item.goods_name}}</view>
+					<view class='goods_num'>商品价格:{{item.goods_price}}</view>
+					<view class='goods_num'>商品数量:{{item.num}}</view>
+				</view>
+			</view>
+		</block>
+	</view>
+	<view class='menulist'>
+		<text>买家留言</text>
+		<input placeholder="对本次交易的说明(选填)" value='{{userInfo.nickname}}' bindblur='orderRemarks'/>
+	</view>
+</view>
+<!-- 提交订单 -->
+<view class="footer">
+	<view class="payment">
+		合计:<span>￥{{cart.total}}</span>
+		<text>共{{cart.count}}件</text>
+	</view>
+	<view class="checkout" bindtap="doPay">提交订单</view>
+</view>

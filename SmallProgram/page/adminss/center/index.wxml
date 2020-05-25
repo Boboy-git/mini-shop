@@ -1,0 +1,59 @@
+<!--pages/usercenter.wxml-->
+<view class='user_view'>
+	<view class='user_info'>
+		<navigator  url="/pages/team/detail/index">
+		<image src="{{userInfo.avatar ? userInfo.avatar : '/images/logo.png'}}"  mode="aspectFill" class='avatar_img'></image>
+		</navigator>
+		<view>
+			欢迎使用后台管理系统
+		</view>
+	</view>
+	<image src='/images/userbg.png' class='userbg'></image>
+</view>
+
+<navigator  url="/page/adminss/banner/index/index">
+<view class='menulist'>
+	<view class='menu_item_img'>
+		<image src="/images/plan.png" mode="widthFix"></image>
+	</view>
+    <view class='myplan'>BANNER管理</view>
+	<view class='right_view'>
+		<image src="/images/more.png" mode="widthFix"></image>
+	</view>
+	<image src="/images/more.png" mode="widthFix"></image>
+</view>
+</navigator>
+<navigator  url="/page/adminss/order_address/index?order_state=1">
+<view class='menulist'>
+	<view class='menu_item_img'>
+		<image src="/images/plan.png" mode="widthFix"></image>
+	</view>
+    <view class='myplan'>订单管理</view>
+	<view class='right_view'>
+		<image src="/images/more.png" mode="widthFix"></image>
+	</view>
+	<image src="/images/more.png" mode="widthFix"></image>
+</view>
+</navigator>
+<view class='menulist' bindtap='showAddressMenu'>
+	<view class='menu_item_img'>
+		<image src="/images/plan.png" mode="widthFix"></image>
+	</view>
+    <view class='myplan'>商品管理</view>
+	<view class='right_view'>
+		<image src="/images/more.png" mode="widthFix"></image>
+	</view>
+	<image src="/images/more.png" mode="widthFix"></image>
+</view>
+<navigator  url="/page/adminss/member/index">
+<view class='menulist'>
+	<view class='menu_item_img'>
+		<image src="/images/plan.png" mode="widthFix"></image>
+	</view>
+    <view class='myplan'>用户管理</view>
+	<view class='right_view'>
+		<image src="/images/more.png" mode="widthFix"></image>
+	</view>
+	<image src="/images/more.png" mode="widthFix"></image>
+</view>
+</navigator>

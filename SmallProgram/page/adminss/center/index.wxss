@@ -1,0 +1,63 @@
+/* pages/usercenter/usercenter.wxss */
+view{
+    color: #363636;
+    font-size: 28rpx;
+}
+.menulist{
+    height: 120rpx;
+    line-height: 120rpx;
+    border-bottom: 1px solid #f3f3f3;
+}
+.menulist view{
+	width: 84%;
+	float: left;
+}
+.menulist image{
+    width:2%;
+	vertical-align:middle;
+}
+.menu_item_img{
+	width: 10%!important;
+}
+.menu_item_img image{
+	width:50%;
+	margin:0 25%;
+}
+.myplan{
+	width: 42%!important;
+}
+.right_view{
+	width: 37%!important;
+	text-align: right;
+	padding-right: 5%;
+	color: red;
+}
+.user_view{
+	height: 287rpx;
+	width: 92%;
+	margin: 0 4%;
+	border-bottom: 1px solid #ebebeb;
+}
+.avatar_img{
+	width: 150rpx;
+	height: 150rpx;
+	float: left;
+	border-radius: 100px;
+}
+.user_info{
+	margin-top: 60rpx;
+}
+.user_info view{
+	width: 70%;
+	float: left;
+	height: 80rpx;
+	line-height: 150rpx;
+	margin-left: 5%;
+}
+.userbg{
+	width:300rpx;
+	height:270rpx;
+	position: absolute;
+	top: 0;
+	right: 0;
+}

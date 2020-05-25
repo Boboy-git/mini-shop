@@ -1,0 +1,188 @@
+/*地址列表*/
+.listview {
+	padding-bottom: 45px;
+}
+
+/*每一项*/
+.item {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 0;
+	border-bottom: 1px solid #ddd;
+	background: white;
+	margin-left: 0;
+	line-height: initial;
+}
+
+/*主体内容*/
+.item .bd {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+/*收件人信息*/
+.item .bd .receiver {
+	color: black;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	margin: 10px 0;
+	margin-left: 10px;
+}
+
+/*姓氏*/
+.item .bd .receiver .firstname {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/*性别*/
+.item .bd .receiver .gender {
+	font-size: 12px;
+	margin: 0 10px;
+}
+
+/*手机号码*/
+.item .bd .receiver .mobile {
+	font-size: 12px;
+}
+
+/*收件地址*/
+.item .bd .detail {
+	color: #999;
+	font-size: 14px;
+	margin: 5px 0;
+	margin-left: 10px;
+}
+.item image {
+	width: 60px!important;
+	height: 60px!important;
+	margin: 10px;
+}
+/*编辑图标*/
+.item .ft {
+	width: 30px!important;
+	height: 30px!important;
+	margin: 10px;
+}
+
+/*.地址列表*/
+
+/*底部添加地址*/
+.add-address {
+	border-top: 1px solid #eee;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 12px 0;
+}
+
+.add-address .icon {
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+}
+
+.add-address .caption {
+	font-size: 14px;
+	margin-left: 5px;
+}
+/*.底部添加地址*/
+/* page/adminss/address/classify/index.wxss */
+
+
+.upd_add_view{
+	position:fixed;
+	z-index:1000;
+	top:0;
+	right:0;
+	left:0;
+	bottom:0;
+	background:rgba(0, 0, 0, 0.6);
+
+}
+.upd_add_item{
+	
+	position:fixed;
+	top:50%;
+	left:50%;
+	width:80%;
+	max-width:300px;
+
+	-webkit-transform:translate(-50%, -50%);
+	transform:translate(-50%, -50%);
+	background-color:#FFFFFF;
+	text-align:center;
+	border-radius:3px;
+	overflow:hidden;
+
+
+}
+.item_title{
+	font-weight:400;
+	font-size:18px;
+	height: 50px;
+	line-height: 50px;
+}
+
+.menulist{
+    height: 100rpx;
+    line-height: 100rpx;
+    border-top: 1px solid #f3f3f3;
+}
+.menulist text{
+    margin-left: 5%;
+    display: block;
+    width: 25%;
+    float: left;
+    
+}
+.menulist input{
+    float: left;
+    width: 68%;
+    vertical-align:middle;
+    height: 70rpx;
+    margin-top: 15rpx;
+	text-align: left;
+}
+.btn_view{
+	width: 100%;	
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	border:1px solid #f3f3f3;
+}
+.btn_view view{
+	width: 50%;
+	float: left;
+	font-size: 36rpx;
+}
+.btn_primary{
+	color: #33C92C
+}
+
+
+.btn_del_view{
+	width: 100%;	
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	border:1px solid #f3f3f3;
+}
+.btn_del_view view{
+	width: 33.33%;
+	float: left;
+	font-size: 36rpx;
+}
+.btn_del_primary{
+	color: #ff0000
+}

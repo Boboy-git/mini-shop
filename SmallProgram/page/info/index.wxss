@@ -1,0 +1,226 @@
+/* page/cart/cart.wxss */
+page{
+	
+	background-color: #fff;
+}
+.image_view{
+	width: 100%;
+	/* margin-top: 120rpx; */
+}
+.image_view2{
+	width: 100%;
+}
+
+.address-container{
+	/* position: fixed; */
+	width: 100%;
+	min-height: 80rpx;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	background-color: #fff;
+	border-bottom: 2rpx solid #4EE9BF;
+}
+.address-container2{
+	/* top: 82rpx; */
+}
+.container {
+	padding-bottom: 120rpx;
+}
+.radio-group{
+	margin-top: 0;
+}
+
+.gocomments{
+	width: 80rpx;
+	line-height: 80rpx;
+	height: 80rpx;
+	text-align: center;
+	background-color: #4EE9BF;
+	color: #fff;
+	font-size: 26rpx;
+	position: fixed;
+	bottom: 200rpx;
+	right: 20rpx;
+	border-radius: 100rpx;
+}
+.gocomments:nth-child(2){
+	bottom:300rpx;
+}
+
+/*收货地址*/
+.address {
+	display: flex;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background: white;
+	position: relative;
+	text-align: left;
+	padding:20rpx;
+}
+
+.address .title {
+	flex:1;
+	font-size: 38rpx;
+}
+
+.address image {
+	width: 50rpx;
+	height: 50rpx;
+	float: right;
+	margin-left: 20rpx;
+}
+
+/*航邮花边*/
+.mail {
+	width: 100%;
+	margin-bottom: 32rpx;
+}
+
+
+.goods_title{
+	font-size: 30rpx;
+	padding-left: 15rpx;
+	height: 30px;
+	line-height: 30px;
+	color: #363636;
+	padding-top: 110rpx;
+}
+.goods_detail{
+	width: 94%;
+	margin: 3%;
+	/* margin-top:120rpx; */
+	/* text-indent: 2em; */
+	color: #000;
+	display: inline-block;
+
+}
+.line{
+	width: 100%;
+	height: 20rpx;
+	background-color: #f3f3f3;
+	margin: 30rpx 0;
+}
+
+
+.share_view{
+  width: 40rpx;
+	height: 40rpx;
+	margin-left: 20rpx;
+}
+button:after {
+  border: none!important;
+}
+button {
+  background-color: #fff;
+  margin: 0!important;
+  padding: 0!important;
+  	width:100%;
+	height:100%;
+    overflow:inherit!important;
+}
+.gocomments{
+	width: 80rpx;
+	line-height: 80rpx;
+	height: 80rpx;
+	text-align: center;
+	background-color: #4EE9BF;
+	color: #fff;
+	font-size: 26rpx;
+	position: fixed;
+	bottom: 200rpx;
+	right: 20rpx;
+	border-radius: 100rpx;
+}
+.gocomments:nth-child(2){
+	bottom:300rpx;
+}
+.star_view{
+	width: 100%;
+	background-color: #fff;
+	border-top:2rpx solid #eee;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height:80rpx;
+	line-height: 80rpx;
+}
+.input_view{
+	width: 78%;
+	height:80rpx;
+	line-height: 80rpx;
+	margin-left: 2%;
+	float: left;
+}
+.makeSSS{
+	width: 20%;
+	height: 60rpx;
+	line-height: 60rpx;
+	background-color: #4EE9BF;
+	color: #fff;
+	text-align: center;
+	float: right;
+	margin-top: 10rpx;
+	border: 10rpx;
+}
+.goDetail{
+	width: 60%;
+	height: 80rpx;
+	line-height: 80rpx;
+	position: fixed;
+	left: 30%;
+	bottom: 20rpx;
+	background-color: #4EE9BF;
+	color: #fff;
+	text-align: center;
+	border-radius: 100rpx;
+}
+
+.gocomments:nth-child(2){
+	bottom:300rpx;
+}
+.star_view{
+	width: 100%;
+	background-color: #fff;
+	border-top:2rpx solid #eee;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height:80rpx;
+	line-height: 80rpx;
+}
+.input_view{
+	width: 78%;
+	height:80rpx;
+	line-height: 80rpx;
+	margin-left: 2%;
+	float: left;
+}
+.makeSSS{
+	width: 20%;
+	height: 60rpx;
+	line-height: 60rpx;
+	background-color: #4EE9BF;
+	color: #fff;
+	text-align: center;
+	float: right;
+	margin-top: 10rpx;
+	border: 10rpx;
+}
+
+.icon {
+	position: fixed;
+	left: 80rpx;
+	bottom: 20rpx;
+	width:80rpx;
+	height: 80rpx;
+	background: #363636;
+	border-radius: 50%;
+}
+.icon image {
+	position: absolute;
+	left: 20rpx;
+	top: 20rpx;
+	width: 40rpx;
+	height: 40rpx;
+}
